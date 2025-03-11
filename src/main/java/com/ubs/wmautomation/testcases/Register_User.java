@@ -36,6 +36,10 @@ public class Register_User {
 		String title=Web.getTitle();
 		test.log(Status.INFO, "appliction title is  "+title);
 		Web.captureScreeshot();
+		
+		//add it to report
+		
+		
 		System.out.println("Title of website is -"+title);
 		//Web.closeBrowser();
 		org.testng.Assert.assertEquals(title,"DEMOQA");
