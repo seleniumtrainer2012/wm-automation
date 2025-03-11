@@ -29,7 +29,7 @@ public class Web {
     	String screenshotPath=System.getProperty("user.dir")+"//Screenshots";
     	Date d=new Date();
     	String TimeStamp=d.toString().replace(" ", "_").replace(":", "_");
-    	FileUtils.copyFile(scrFile, new File(screenshotPath+"_"+TimeStamp+"_.png"));
+    	FileUtils.copyFile(scrFile, new File(screenshotPath+"//Screenshot_"+TimeStamp+"_.png"));
     }
     
 	public static void navigate(String URL) {

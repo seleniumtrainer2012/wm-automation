@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-11T10:22:34 IST" name="WM Automation Suite" finished-at="2025-03-11T10:23:01 IST" duration-ms="27539">
+  <suite started-at="2025-03-11T10:26:58 IST" name="WM Automation Suite" finished-at="2025-03-11T10:27:21 IST" duration-ms="23241">
     <groups>
       <group name="Sanity">
         <method signature="Register_User.Update_Existing_User_Testcase()[pri:0, instance:com.ubs.wmautomation.testcases.Register_User@12591ac8]" name="Update_Existing_User_Testcase" class="com.ubs.wmautomation.testcases.Register_User"/>
@@ -12,17 +12,17 @@
         <method signature="Register_User.Update_Existing_User_Testcase()[pri:0, instance:com.ubs.wmautomation.testcases.Register_User@12591ac8]" name="Update_Existing_User_Testcase" class="com.ubs.wmautomation.testcases.Register_User"/>
       </group> <!-- Reg -->
     </groups>
-    <test started-at="2025-03-11T10:22:34 IST" name="WM Automatino-Regression Test Suite" finished-at="2025-03-11T10:23:01 IST" duration-ms="27539">
+    <test started-at="2025-03-11T10:26:58 IST" name="WM Automatino-Regression Test Suite" finished-at="2025-03-11T10:27:21 IST" duration-ms="23241">
       <class name="com.ubs.wmautomation.testcases.Register_User">
-        <test-method signature="Add_New_User_Testcase()[pri:0, instance:com.ubs.wmautomation.testcases.Register_User@12591ac8]" started-at="2025-03-11T10:22:34 IST" name="Add_New_User_Testcase" finished-at="2025-03-11T10:22:58 IST" duration-ms="24260" status="PASS">
+        <test-method signature="Add_New_User_Testcase()[pri:0, instance:com.ubs.wmautomation.testcases.Register_User@12591ac8]" started-at="2025-03-11T10:26:58 IST" name="Add_New_User_Testcase" finished-at="2025-03-11T10:27:17 IST" duration-ms="19717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_New_User_Testcase -->
-        <test-method signature="Update_Existing_User_Testcase()[pri:0, instance:com.ubs.wmautomation.testcases.Register_User@12591ac8]" started-at="2025-03-11T10:22:58 IST" name="Update_Existing_User_Testcase" finished-at="2025-03-11T10:23:01 IST" duration-ms="3196" status="PASS">
+        <test-method signature="Update_Existing_User_Testcase()[pri:0, instance:com.ubs.wmautomation.testcases.Register_User@12591ac8]" started-at="2025-03-11T10:27:17 IST" name="Update_Existing_User_Testcase" finished-at="2025-03-11T10:27:21 IST" duration-ms="3487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Update_Existing_User_Testcase -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.ubs.wmautomation.testcases.Register_User@12591ac8]" started-at="2025-03-11T10:23:01 IST" name="quitBrowser" finished-at="2025-03-11T10:23:02 IST" duration-ms="1192" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.ubs.wmautomation.testcases.Register_User@12591ac8]" started-at="2025-03-11T10:27:21 IST" name="quitBrowser" finished-at="2025-03-11T10:27:22 IST" duration-ms="1157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
