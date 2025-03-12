@@ -6,7 +6,6 @@
       <class name="com.ubs.wmautomation.testcases.Register_User">
         <methods>
           <include name="Add_New_User_Testcase"/>
-          <include name="Update_Existing_User_Testcase"/>
           <include name="quitBrowser"/>
         </methods>
       </class> <!-- com.ubs.wmautomation.testcases.Register_User -->

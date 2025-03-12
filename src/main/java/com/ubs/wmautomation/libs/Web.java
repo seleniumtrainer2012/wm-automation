@@ -23,13 +23,15 @@ public class Web {
 		driver.quit();
 	}
 
-    public static void captureScreeshot() throws IOException {
+    public static String captureScreeshot() throws IOException {
     	File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
     	// Now you can do whatever you need to do with it, for example copy somewhere
     	String screenshotPath=System.getProperty("user.dir")+"//Screenshots";
     	Date d=new Date();
     	String TimeStamp=d.toString().replace(" ", "_").replace(":", "_");
     	FileUtils.copyFile(scrFile, new File(screenshotPath+"//Screenshot_"+TimeStamp+"_.png"));
+   
+    	return screenshotPath+"//Screenshot_"+TimeStamp+"_.png";
     }
     
 	public static void navigate(String URL) {

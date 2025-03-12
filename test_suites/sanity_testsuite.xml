@@ -4,6 +4,7 @@
   <test thread-count="1" parallel="methods" name="WM Automatino-Regression Test Suite">
     <classes>
       <class name="com.ubs.wmautomation.testcases.Register_User"/>
+    <class name="com.ubs.wmautomation.testcases.Users_APITests"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
