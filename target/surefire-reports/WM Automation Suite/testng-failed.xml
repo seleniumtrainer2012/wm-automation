@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WM Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="methods" name="WM Automatino-Regression Test Suite(failed)" verbose="0">
+    <classes>
+      <class name="com.ubs.wmautomation.testcases.Register_User">
+        <methods>
+          <include name="Validate_Books_Title_Testcase"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- com.ubs.wmautomation.testcases.Register_User -->
+    </classes>
+  </test> <!-- WM Automatino-Regression Test Suite(failed) -->
+</suite> <!-- Failed suite [WM Automation Suite] -->

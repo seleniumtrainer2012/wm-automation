@@ -1,5 +1,6 @@
 package com.ubs.wmautomation.testcases;
 
+import java.util.List;
 import java.util.Properties;
 
 import org.testng.annotations.AfterSuite;
@@ -15,12 +16,14 @@ import com.ubs.wmautomation.libs.Utility;
 import com.ubs.wmautomation.libs.Web;
 import com.ubs.wmautomation.utility.Reporting;
 
-public class Register_User extends BaseTest {
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 
-	/*
-	 * 
-	 * 
-	 */
+public class Register_User extends BaseTest {
+	private ExtentReports extent=Reporting.getInstance();
+
+
 	@Test(groups = {"Reg"})
 	public void Add_New_User_Testcase() throws Exception {		
 		ExtentTest test=extent.createTest("Add_New_User_Testcase");
@@ -38,26 +41,17 @@ public class Register_User extends BaseTest {
 		String title=Web.getTitle();
 		test.log(Status.INFO, "appliction title is  "+title);
 		String screenshotPath=Web.captureScreeshot();
-
-		//add it to report	
-		//test.addScreenCaptureFromPath(screenshotPath);
-		//test.pass(screenshotPath);
-		//test.log(Status.INFO,test.addScreenCaptureFromPath(screenshotPath));
-		//test.log(LogStatus.INFO,test.addScreenCapture(screenshotPath));
 		// reference image saved to disk
 		test.fail(MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 
 		// base64
 		//test.fail(MediaEntityBuilder.createScreenCaptureFromBase64String("base64").build());
-		
-
-
 
 		System.out.println("Title of website is -"+title);
 		//Web.closeBrowser();
 		org.testng.Assert.assertEquals(title,"DEMOQA");
 		test.log(Status.PASS, "Varify website title: actual -"+title+", expected=DEMOQA");
-
+		extent.flush();
 
 	}
 
@@ -88,11 +82,8 @@ public class Register_User extends BaseTest {
 		test.fail(MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 
 		System.out.println("Title of website is -"+title);
-
-
+		extent.flush();
 	}
-
-
 
 
 }
