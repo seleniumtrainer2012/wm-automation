@@ -1,10 +1,10 @@
-package com.ubs.wmautomation.libs;
+package com.ubs.wmautomation.util;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class Utility {
+public class DataReader {
 
 
 	public static Properties loadConfig() throws Exception {

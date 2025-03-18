@@ -13,9 +13,9 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.util.Assert;
-import com.ubs.wmautomation.libs.Utility;
 import com.ubs.wmautomation.libs.Web;
-import com.ubs.wmautomation.utility.Reporting;
+import com.ubs.wmautomation.util.DataReader;
+import com.ubs.wmautomation.util.Reporting;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;

@@ -12,9 +12,9 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.util.Assert;
-import com.ubs.wmautomation.libs.Utility;
 import com.ubs.wmautomation.libs.Web;
-import com.ubs.wmautomation.utility.Reporting;
+import com.ubs.wmautomation.util.DataReader;
+import com.ubs.wmautomation.util.Reporting;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -30,7 +30,7 @@ public class Register_User extends BaseTest {
 
 		System.out.println("Add_New_User_Testcase");
 		//load config files
-		Properties active_env=Utility.loadConfig();
+		Properties active_env=DataReader.loadConfig();
 
 		//code
 		Web.launchBrowser(active_env.getProperty("brower.name"));
@@ -62,8 +62,10 @@ public class Register_User extends BaseTest {
 
 		System.out.println("Update_Existing_User_Testcase");
 		//load config files
-		Properties active_env=Utility.loadConfig();
-
+		Properties active_env=DataReader.loadConfig();
+		
+		//get data from excel sheet
+		//HashMap<String,String> TCData=DataReader.getData(TestCaseName);
 		//code
 		Web.launchBrowser(active_env.getProperty("brower.name"));
 		test.log(Status.INFO, "browser name "+active_env.getProperty("brower.name")+ " launched");

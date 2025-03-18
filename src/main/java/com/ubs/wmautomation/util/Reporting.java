@@ -1,4 +1,4 @@
-package com.ubs.wmautomation.utility;
+package com.ubs.wmautomation.util;
 import java.util.Date;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
